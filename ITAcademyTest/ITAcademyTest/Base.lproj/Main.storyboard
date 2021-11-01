@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q3e-MK-4s8">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vNR-B3-tNc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -14,7 +14,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ITAcademyTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="L2p-23-Sv2">
@@ -37,7 +37,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fin-2N-3Qg">
-                                <rect key="frame" x="214" y="463" width="0.0" height="0.0"/>
+                                <rect key="frame" x="207" y="448" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -101,7 +101,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bMs-Lg-EJ5" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="THe-5A-wO4">
-                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -118,22 +118,22 @@
             <objects>
                 <viewController id="m8m-YZ-QCc" customClass="ConstrainDemoViewController" customModule="ITAcademyTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LQm-zs-7Fg">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RHy-lU-xmj" userLabel="greenNew">
-                                <rect key="frame" x="20" y="64" width="184" height="150"/>
+                                <rect key="frame" x="20" y="64" width="177" height="150"/>
                                 <color key="backgroundColor" name="backgroundColor1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="w6a-OW-QhJ"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kst-wJ-Mqc" userLabel="yellowView">
-                                <rect key="frame" x="224" y="64" width="184" height="150"/>
+                                <rect key="frame" x="217" y="64" width="177" height="150"/>
                                 <color key="backgroundColor" name="backgroundColor2"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oXf-2U-mjJ" userLabel="redView">
-                                <rect key="frame" x="20" y="269" width="388" height="388"/>
+                                <rect key="frame" x="20" y="261" width="374" height="374"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="oXf-2U-mjJ" secondAttribute="height" multiplier="1:1" id="TMc-PI-VRC"/>
@@ -165,11 +165,11 @@
             <objects>
                 <viewController id="q3e-MK-4s8" customClass="HomeWorkViewController" customModule="ITAcademyTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KQ8-1d-jhS">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cT9-EI-VaS">
-                                <rect key="frame" x="20" y="764.33333333333337" width="77.666666666666671" height="77.666666666666629"/>
+                                <rect key="frame" x="20" y="737.5" width="74.5" height="74.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="cT9-EI-VaS" secondAttribute="height" multiplier="1:1" id="Qiw-OT-cFj"/>
                                 </constraints>
@@ -186,7 +186,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfm-x6-S2s">
-                                <rect key="frame" x="117.66666666666669" y="764.33333333333337" width="83.333333333333314" height="77.666666666666629"/>
+                                <rect key="frame" x="114.5" y="737.5" width="79.5" height="74.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="2" cornerStyle="capsule">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="32"/>
@@ -198,7 +198,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJX-1e-gqz">
-                                <rect key="frame" x="220.99999999999997" y="764.33333333333337" width="83.666666666666657" height="77.666666666666629"/>
+                                <rect key="frame" x="214" y="737.5" width="80" height="74.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="3" cornerStyle="capsule">
                                     <backgroundConfiguration key="background">
@@ -213,7 +213,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WtL-1R-od5">
-                                <rect key="frame" x="324.66666666666669" y="764.33333333333337" width="83.333333333333314" height="77.666666666666629"/>
+                                <rect key="frame" x="314" y="737.5" width="80" height="74.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="4" cornerStyle="capsule">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="32"/>
@@ -225,10 +225,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tge-VD-gCN">
-                                <rect key="frame" x="20" y="614.33333333333337" width="388" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="de9-al-2aa"/>
-                                </constraints>
+                                <rect key="frame" x="20" y="544.5" width="374" height="143"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="56"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -239,6 +236,7 @@
                         <constraints>
                             <constraint firstItem="pfm-x6-S2s" firstAttribute="bottom" secondItem="cT9-EI-VaS" secondAttribute="bottom" id="0Si-3X-fWn"/>
                             <constraint firstItem="Lgz-Lf-AQM" firstAttribute="trailing" secondItem="WtL-1R-od5" secondAttribute="trailing" constant="20" id="2hz-14-Lit"/>
+                            <constraint firstItem="Tge-VD-gCN" firstAttribute="height" secondItem="KQ8-1d-jhS" secondAttribute="height" multiplier="0.16" id="9Y8-0L-0Xl"/>
                             <constraint firstItem="Lgz-Lf-AQM" firstAttribute="bottom" secondItem="cT9-EI-VaS" secondAttribute="bottom" constant="50" id="CmI-Vr-Xhk"/>
                             <constraint firstItem="gJX-1e-gqz" firstAttribute="height" secondItem="pfm-x6-S2s" secondAttribute="height" id="LKb-DG-Cbq"/>
                             <constraint firstItem="WtL-1R-od5" firstAttribute="height" secondItem="gJX-1e-gqz" secondAttribute="height" id="Lcr-9e-9Cu"/>
@@ -264,6 +262,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nqD-1x-kGu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="162.61682242990653" y="-649.24406047516209"/>
+        </scene>
+        <!--Code Auto Layout View Controller-->
+        <scene sceneID="fDe-xz-MPI">
+            <objects>
+                <viewController id="vNR-B3-tNc" customClass="CodeAutoLayoutViewController" customModule="ITAcademyTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8o6-Sp-ddk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6fc-Bi-29r"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xfO-Cz-d9z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-300" y="-1323"/>
         </scene>
     </scenes>
     <resources>

@@ -18,6 +18,7 @@
 		611BDD08271AC36900C8F1B1 /* ITAcademyTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611BDD07271AC36900C8F1B1 /* ITAcademyTestUITests.swift */; };
 		611BDD0A271AC36900C8F1B1 /* ITAcademyTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611BDD09271AC36900C8F1B1 /* ITAcademyTestUITestsLaunchTests.swift */; };
 		61237223272C70530029C1ED /* HomeWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61237222272C70530029C1ED /* HomeWorkViewController.swift */; };
+		61986090272D389300B7FDB9 /* CodeAutoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6198608F272D389300B7FDB9 /* CodeAutoLayoutViewController.swift */; };
 		61BFEB39272868E40050FEDD /* ConstrainDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BFEB38272868E40050FEDD /* ConstrainDemoViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		611BDD07271AC36900C8F1B1 /* ITAcademyTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITAcademyTestUITests.swift; sourceTree = "<group>"; };
 		611BDD09271AC36900C8F1B1 /* ITAcademyTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITAcademyTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		61237222272C70530029C1ED /* HomeWorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorkViewController.swift; sourceTree = "<group>"; };
+		6198608F272D389300B7FDB9 /* CodeAutoLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeAutoLayoutViewController.swift; sourceTree = "<group>"; };
 		61BFEB38272868E40050FEDD /* ConstrainDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstrainDemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +111,7 @@
 				611BDCE5271AC36700C8F1B1 /* SceneDelegate.swift */,
 				611BDCE7271AC36700C8F1B1 /* ViewController.swift */,
 				611BDCE9271AC36700C8F1B1 /* Main.storyboard */,
+				6198608F272D389300B7FDB9 /* CodeAutoLayoutViewController.swift */,
 				61237222272C70530029C1ED /* HomeWorkViewController.swift */,
 				61BFEB38272868E40050FEDD /* ConstrainDemoViewController.swift */,
 				611BDCEF271AC36900C8F1B1 /* Assets.xcassets */,
@@ -270,6 +273,7 @@
 				611BDCE8271AC36700C8F1B1 /* ViewController.swift in Sources */,
 				611BDCE4271AC36700C8F1B1 /* AppDelegate.swift in Sources */,
 				61237223272C70530029C1ED /* HomeWorkViewController.swift in Sources */,
+				61986090272D389300B7FDB9 /* CodeAutoLayoutViewController.swift in Sources */,
 				611BDCE6271AC36700C8F1B1 /* SceneDelegate.swift in Sources */,
 				61BFEB39272868E40050FEDD /* ConstrainDemoViewController.swift in Sources */,
 				611BDCEE271AC36700C8F1B1 /* ITAcademyTest.xcdatamodeld in Sources */,
