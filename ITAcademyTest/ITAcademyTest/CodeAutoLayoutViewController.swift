@@ -20,7 +20,7 @@ class CodeAutoLayoutViewController: UIViewController {
             firstLabel.textAlignment = .center
             firstLabel.font = UIFont.systemFont(ofSize: 55)
             firstLabel.layer.cornerRadius = 10
-            firstLabel.layer.masksToBounds = true
+            firstLabel.clipsToBounds = true
             firstLabel.backgroundColor = .gray
             
             secondLabel.text = "2"
@@ -61,23 +61,24 @@ class CodeAutoLayoutViewController: UIViewController {
 
             firstLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
             firstLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50).isActive = true
-            firstLabel.heightAnchor.constraint(equalTo: secondLabel.widthAnchor, multiplier: 1.0/1.0).isActive = true
-            firstLabel.widthAnchor.constraint(equalTo: secondLabel.heightAnchor, multiplier: 1.0/1.0).isActive = true
+            firstLabel.heightAnchor.constraint(equalTo: firstLabel.widthAnchor, multiplier: 1.0/1.0).isActive = true
+            firstLabel.widthAnchor.constraint(equalTo: firstLabel.heightAnchor, multiplier: 1.0/1.0).isActive = true
             
             secondLabel.leadingAnchor.constraint(equalTo: firstLabel.trailingAnchor, constant: 20).isActive = true
             secondLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50).isActive = true
-            secondLabel.heightAnchor.constraint(equalTo: thirdLabel.widthAnchor, multiplier: 1.0/1.0).isActive = true
-            secondLabel.widthAnchor.constraint(equalTo: thirdLabel.heightAnchor, multiplier: 1.0/1.0).isActive = true
+            secondLabel.heightAnchor.constraint(equalTo: firstLabel.widthAnchor, multiplier: 1.0/1.0).isActive = true
+            secondLabel.widthAnchor.constraint(equalTo: firstLabel.heightAnchor, multiplier: 1.0/1.0).isActive = true
             
             thirdLabel.leadingAnchor.constraint(equalTo: secondLabel.trailingAnchor, constant: 20).isActive = true
             thirdLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50).isActive = true
-            thirdLabel.heightAnchor.constraint(equalTo: fourthLabel.widthAnchor, multiplier: 1.0/1.0).isActive = true
-            thirdLabel.widthAnchor.constraint(equalTo: fourthLabel.heightAnchor, multiplier: 1.0/1.0).isActive = true
+            thirdLabel.heightAnchor.constraint(equalTo: firstLabel.widthAnchor, multiplier: 1.0/1.0).isActive = true
+            thirdLabel.widthAnchor.constraint(equalTo: firstLabel.heightAnchor, multiplier: 1.0/1.0).isActive = true
             
             fourthLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
             fourthLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50).isActive = true
             fourthLabel.leadingAnchor.constraint(equalTo: thirdLabel.trailingAnchor, constant: 20).isActive = true
-            fourthLabel.heightAnchor.constraint(equalTo: fourthLabel.widthAnchor, multiplier: 1.0/1.0).isActive = true
+            fourthLabel.heightAnchor.constraint(equalTo: firstLabel.widthAnchor, multiplier: 1.0/1.0).isActive = true
+            fourthLabel.widthAnchor.constraint(equalTo: firstLabel.heightAnchor, multiplier: 1.0/1.0).isActive = true
             
         }
 
