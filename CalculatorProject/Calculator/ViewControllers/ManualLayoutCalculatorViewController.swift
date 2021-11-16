@@ -189,7 +189,7 @@ class ManualLayoutCalculatorViewController: AbstractCalculatorViewController {
             digit9Button.heightAnchor.constraint(equalTo: equalButton.heightAnchor)
         ])
         
-
+        
         let plusButton = BinaryOperatorButton(type: .custom)
         plusButton.addTarget(self, action: #selector(binaryOperandButtonTapped), for: .touchUpInside)
         plusButton.tag = 102
@@ -198,11 +198,11 @@ class ManualLayoutCalculatorViewController: AbstractCalculatorViewController {
         plusButton.setTitleColor(plusButton.defaultColor, for: .selected)
         plusButton.backgroundColor = plusButton.defaultColor
         plusButton.titleLabel?.font = UIFont.systemFont(ofSize: 46, weight: .semibold)
-
+        
         plusButton.translatesAutoresizingMaskIntoConstraints = false
-
+        
         view.addSubview(plusButton)
-
+        
         NSLayoutConstraint.activate([
             plusButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             plusButton.bottomAnchor.constraint(equalTo: equalButton.topAnchor, constant: -20),
@@ -218,11 +218,11 @@ class ManualLayoutCalculatorViewController: AbstractCalculatorViewController {
         minusButton.setTitleColor(minusButton.defaultColor, for: .selected)
         minusButton.backgroundColor = minusButton.defaultColor
         minusButton.titleLabel?.font = UIFont.systemFont(ofSize: 46, weight: .semibold)
-
+        
         minusButton.translatesAutoresizingMaskIntoConstraints = false
-
+        
         view.addSubview(minusButton)
-
+        
         NSLayoutConstraint.activate([
             minusButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             minusButton.bottomAnchor.constraint(equalTo: plusButton.topAnchor, constant: -20),
@@ -238,11 +238,11 @@ class ManualLayoutCalculatorViewController: AbstractCalculatorViewController {
         multiplyButton.setTitleColor(multiplyButton.defaultColor, for: .selected)
         multiplyButton.backgroundColor = multiplyButton.defaultColor
         multiplyButton.titleLabel?.font = UIFont.systemFont(ofSize: 46, weight: .semibold)
-
+        
         multiplyButton.translatesAutoresizingMaskIntoConstraints = false
-
+        
         view.addSubview(multiplyButton)
-
+        
         NSLayoutConstraint.activate([
             multiplyButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             multiplyButton.bottomAnchor.constraint(equalTo: minusButton.topAnchor, constant: -20),
@@ -258,18 +258,18 @@ class ManualLayoutCalculatorViewController: AbstractCalculatorViewController {
         devideButton.setTitleColor(devideButton.defaultColor, for: .selected)
         devideButton.backgroundColor = devideButton.defaultColor
         devideButton.titleLabel?.font = UIFont.systemFont(ofSize: 46, weight: .semibold)
-
+        
         devideButton.translatesAutoresizingMaskIntoConstraints = false
-
+        
         view.addSubview(devideButton)
-
+        
         NSLayoutConstraint.activate([
             devideButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             devideButton.bottomAnchor.constraint(equalTo: multiplyButton.topAnchor, constant: -20),
             devideButton.widthAnchor.constraint(equalTo: equalButton.widthAnchor),
             devideButton.heightAnchor.constraint(equalTo: equalButton.heightAnchor)
         ])
-
+        
         let percentButton = UnaryOperandButton(type: .custom)
         percentButton.addTarget(self, action: #selector(unaryOperatorButtonTapped), for: .touchUpInside)
         percentButton.tag = 201
@@ -277,11 +277,11 @@ class ManualLayoutCalculatorViewController: AbstractCalculatorViewController {
         percentButton.setTitleColor(percentButton.textColor, for: .normal)
         percentButton.backgroundColor = percentButton.background1Color
         percentButton.titleLabel?.font = UIFont.systemFont(ofSize: 46, weight: .semibold)
-
+        
         percentButton.translatesAutoresizingMaskIntoConstraints = false
-
+        
         view.addSubview(percentButton)
-
+        
         NSLayoutConstraint.activate([
             percentButton.trailingAnchor.constraint(equalTo: devideButton.leadingAnchor, constant: -20),
             percentButton.bottomAnchor.constraint(equalTo: digit9Button.topAnchor, constant: -20),
@@ -296,11 +296,11 @@ class ManualLayoutCalculatorViewController: AbstractCalculatorViewController {
         invertButton.setTitleColor(invertButton.textColor, for: .normal)
         invertButton.backgroundColor = invertButton.background1Color
         invertButton.titleLabel?.font = UIFont.systemFont(ofSize: 46, weight: .semibold)
-
+        
         invertButton.translatesAutoresizingMaskIntoConstraints = false
-
+        
         view.addSubview(invertButton)
-
+        
         NSLayoutConstraint.activate([
             invertButton.trailingAnchor.constraint(equalTo: percentButton.leadingAnchor, constant: -20),
             invertButton.bottomAnchor.constraint(equalTo: digit8Button.topAnchor, constant: -20),
@@ -314,11 +314,11 @@ class ManualLayoutCalculatorViewController: AbstractCalculatorViewController {
         clearButton.setTitleColor(clearButton.textColor, for: .normal)
         clearButton.backgroundColor = clearButton.background1Color
         clearButton.titleLabel?.font = UIFont.systemFont(ofSize: 25, weight: .semibold)
-
+        
         clearButton.translatesAutoresizingMaskIntoConstraints = false
-
+        
         view.addSubview(clearButton)
-
+        
         NSLayoutConstraint.activate([
             clearButton.trailingAnchor.constraint(equalTo: invertButton.leadingAnchor, constant: -20),
             clearButton.bottomAnchor.constraint(equalTo: digit7Button.topAnchor, constant: -20),
