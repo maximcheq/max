@@ -7,21 +7,26 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UISearchBarDelegate {
+    
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var searchbar: UISearchBar!
+    
+    var filteredData: [String]!
+    
     var boysDataSource = ["Aртимович Игорь Владимирович",
-                      "Богданович Дмитрий Александрович",
-                      "Гришин Павел Андреевич",
-                      "Куклицкий Максим Сергеевич",
-                      "Лапин Николай Владимирович",
-                      "Малишевский Никита Валерьевич",
-                      "Матвеенко Сергей Александрови",
-                      "Мостовой Алексей Алексеевич",
-                      "Пачковский Михаил Тадеушевич",
-                      "Савков Александр Геннадьевич",
-                      "Симонов Владислав Дмитриевич",
-                      "Сысов Валерий Александрович"
+                          "Богданович Дмитрий Александрович",
+                          "Гришин Павел Андреевич",
+                          "Куклицкий Максим Сергеевич",
+                          "Лапин Николай Владимирович",
+                          "Малишевский Никита Валерьевич",
+                          "Матвеенко Сергей Александрови",
+                          "Мостовой Алексей Алексеевич",
+                          "Пачковский Михаил Тадеушевич",
+                          "Савков Александр Геннадьевич",
+                          "Симонов Владислав Дмитриевич",
+                          "Сысов Валерий Александрович"
             ].sorted()
     
     
@@ -32,35 +37,31 @@ class ViewController: UIViewController {
                            "Елисеева Марина Михайловна"
               ].sorted()
     
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        searchbar.delegate = self
+        filteredData = girlsDataSource+boysDataSource
     }
 }
 
 extension ViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        2
+        1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if section == 0 {
-            return boysDataSource.count
-        } else {
-            return girlsDataSource.count
-        }
+            return filteredData.count
     }
     
 
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if section == 0 {
-            return "Мужчины (\(boysDataSource.count))"
-        } else {
-            return "Женщины (\(girlsDataSource.count))"
-        }
-
+            return "Ученики (\(filteredData.count))"
+    
     }
 
     
@@ -68,11 +69,27 @@ extension ViewController: UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "StudentCell", for: indexPath) as! StudentCell
         
-        let name = indexPath.section == 0 ? boysDataSource[indexPath.row] : girlsDataSource[indexPath.row]
+        let name = indexPath.section == 0 ? filteredData[indexPath.row] : filteredData[indexPath.row]
         cell.nameLabel.text = name
 
         return cell
     }
         
+    // MARK: SearchBar
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        filteredData = []
+        if searchText == ""{
+            filteredData = boysDataSource+girlsDataSource
+        } else {
+        for name in boysDataSource+girlsDataSource {
+            
+            if name.lowercased().contains(searchText.lowercased()) {
+                filteredData.append(name)
+                }
+            }
+        }
+        self.tableView.reloadData()
+    }
 }
 
