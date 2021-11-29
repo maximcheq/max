@@ -82,28 +82,67 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HBC-ZK-UQC">
-                                <rect key="frame" x="173.5" y="432.5" width="67" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <rect key="frame" x="44" y="766.5" width="326.5" height="45.5"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Выбрать студента" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="31"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="selectedButtonTapped:" destination="Xfi-MM-P0R" eventType="touchUpInside" id="M1f-hZ-sAn"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6S0-Do-fHp">
+                                <rect key="frame" x="20" y="64" width="374" height="667.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StudentCell1" id="UGy-tH-nMq" customClass="StudentCell1" customModule="StudentList" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="374" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UGy-tH-nMq" id="4ST-bR-ssC">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioG-Hh-RVb">
+                                                    <rect key="frame" x="20" y="11.5" width="334" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ioG-Hh-RVb" secondAttribute="trailing" id="OXr-aQ-SEM"/>
+                                                <constraint firstItem="ioG-Hh-RVb" firstAttribute="leading" secondItem="4ST-bR-ssC" secondAttribute="leadingMargin" id="t7J-TB-qiU"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ioG-Hh-RVb" secondAttribute="bottom" id="toM-g1-KkI"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="labelName" destination="ioG-Hh-RVb" id="uYi-0E-dv2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Xfi-MM-P0R" id="wJ1-1J-xEO"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Y4T-Jk-G5u"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="HBC-ZK-UQC" firstAttribute="centerY" secondItem="WN5-us-1ly" secondAttribute="centerY" id="BXG-3f-UYT"/>
-                            <constraint firstItem="HBC-ZK-UQC" firstAttribute="centerX" secondItem="WN5-us-1ly" secondAttribute="centerX" id="uly-Tr-Arw"/>
+                            <constraint firstItem="6S0-Do-fHp" firstAttribute="leading" secondItem="Y4T-Jk-G5u" secondAttribute="leading" constant="20" id="0tg-Qy-rGe"/>
+                            <constraint firstItem="Y4T-Jk-G5u" firstAttribute="bottom" secondItem="HBC-ZK-UQC" secondAttribute="bottom" constant="50" id="Hd1-Cd-jWh"/>
+                            <constraint firstItem="6S0-Do-fHp" firstAttribute="top" secondItem="Y4T-Jk-G5u" secondAttribute="top" constant="20" id="hj3-H4-S7D"/>
+                            <constraint firstItem="Y4T-Jk-G5u" firstAttribute="trailing" secondItem="6S0-Do-fHp" secondAttribute="trailing" constant="20" id="j4l-aJ-154"/>
+                            <constraint firstItem="HBC-ZK-UQC" firstAttribute="centerX" secondItem="WN5-us-1ly" secondAttribute="centerX" id="rI0-16-9Jt"/>
+                            <constraint firstItem="HBC-ZK-UQC" firstAttribute="top" secondItem="6S0-Do-fHp" secondAttribute="bottom" constant="35" id="rMu-77-Yx7"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="selectedButton" destination="HBC-ZK-UQC" id="hS4-qU-lkA"/>
+                        <outlet property="tableView" destination="6S0-Do-fHp" id="oYR-g8-W0B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRB-hH-pOG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="719" y="80"/>
+            <point key="canvasLocation" x="718.84057971014499" y="79.6875"/>
         </scene>
     </scenes>
     <resources>
