@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xfi-MM-P0R">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UOD-eR-tY5">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -91,7 +92,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6S0-Do-fHp">
-                                <rect key="frame" x="20" y="64" width="374" height="667.5"/>
+                                <rect key="frame" x="20" y="108" width="374" height="623.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StudentCell1" id="UGy-tH-nMq" customClass="StudentCell1" customModule="StudentList" customModuleProvider="target">
@@ -135,6 +136,14 @@
                             <constraint firstItem="HBC-ZK-UQC" firstAttribute="top" secondItem="6S0-Do-fHp" secondAttribute="bottom" constant="35" id="rMu-77-Yx7"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="53e-aY-mTT">
+                        <barButtonItem key="rightBarButtonItem" title="Изменить" springLoaded="YES" style="plain" id="nyK-Hc-jpG">
+                            <imageReference key="image" image="pencil" catalog="system" symbolScale="large"/>
+                            <connections>
+                                <action selector="didEdittapped:" destination="Xfi-MM-P0R" id="6yN-EO-w69"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="selectedButton" destination="HBC-ZK-UQC" id="hS4-qU-lkA"/>
                         <outlet property="tableView" destination="6S0-Do-fHp" id="oYR-g8-W0B"/>
@@ -142,10 +151,29 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRB-hH-pOG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1628.985507246377" y="79.6875"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PoC-Uh-Iyv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UOD-eR-tY5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PcM-xM-oJF">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Xfi-MM-P0R" kind="relationship" relationship="rootViewController" id="CsP-Xr-BKO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I6v-Y6-zIZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="718.84057971014499" y="79.6875"/>
         </scene>
     </scenes>
     <resources>
+        <image name="pencil" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

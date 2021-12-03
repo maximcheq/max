@@ -11,6 +11,13 @@ class SelectedStudentViewController: UIViewController {
     
     var arrayStudentList: [String] = []
     
+    @IBAction func didEdittapped(_ sender: Any) {
+        if tableView.isEditing == false && arrayStudentList.count > 0 {
+            tableView.isEditing = true
+        } else {
+            tableView.isEditing = false
+        }
+    }
     @IBOutlet weak var selectedButton: UIButton!
     
     @IBOutlet weak var tableView: UITableView!
@@ -21,7 +28,6 @@ class SelectedStudentViewController: UIViewController {
         let vc = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
         vc.delegate = self
         present(vc, animated: true, completion: nil)
-        tableView.setEditing(true, animated: true)
     }
     
 }
@@ -81,5 +87,6 @@ extension SelectedStudentViewController: UITableViewDataSource {
         tableView.reloadData()
     }
 }
+
 
 
