@@ -15,6 +15,7 @@ protocol ViewControllerDelegate {
 class ViewController: UIViewController {
     
     var delegate: ViewControllerDelegate?
+    var didSelectStudentClosure: ((String) -> ())?
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -137,6 +138,10 @@ extension ViewController: UITableViewDelegate {
             name = filteredDataGirls[indexPath.row]
         }
         delegate?.didSelectStudent(name)
+        
+        if let didSelectStudentClosure = didSelectStudentClosure {
+            didSelectStudentClosure(name)
+        }
     }
     
 }

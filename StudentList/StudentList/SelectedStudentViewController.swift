@@ -26,7 +26,11 @@ class SelectedStudentViewController: UIViewController {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-        vc.delegate = self
+//        vc.delegate = self
+        vc.didSelectStudentClosure = { [weak self] student in
+            self?.didSelectStudent(student)
+            
+        }
         present(vc, animated: true, completion: nil)
     }
     
