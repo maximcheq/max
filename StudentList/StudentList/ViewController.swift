@@ -74,8 +74,6 @@ extension ViewController: UITableViewDataSource {
         return filteredDataBoys.count + filteredDataGirls.count
     }
     
-    
-    
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case 0: return "Мужчины \(filteredDataBoys.count) человек"
@@ -85,7 +83,6 @@ extension ViewController: UITableViewDataSource {
         return "\(section)"
         
     }
-    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -100,10 +97,8 @@ extension ViewController: UITableViewDataSource {
         return cell
     }
 }
-// MARK: SearchBar
 
 extension ViewController: UISearchBarDelegate {
-    
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         filteredDataBoys = []
@@ -143,5 +138,4 @@ extension ViewController: UITableViewDelegate {
             didSelectStudentClosure(name)
         }
     }
-    
 }

@@ -26,25 +26,29 @@ class SelectedStudentViewController: UIViewController {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-//        vc.delegate = self
+        //        vc.delegate = self
         vc.didSelectStudentClosure = { [weak self] student in
             self?.didSelectStudent(student)
-            
         }
         present(vc, animated: true, completion: nil)
     }
-    
 }
 
 extension SelectedStudentViewController: ViewControllerDelegate {
     func didSelectStudent(_ student: String) {
         if arrayStudentList.contains(student) == false {
             arrayStudentList.insert(student, at: 0)
+            arrayStudentList.sort()
+        } else { DispatchQueue.main.async {
+            let alert = UIAlertController(title: "Внимание", message: "Студент уже в списке", preferredStyle: .alert)
+            let alertBtn = UIAlertAction(title: "Окей", style: .default, handler: nil)
+            alert.addAction(alertBtn)
+            self.present(alert, animated: true, completion: nil)
+            }
         }
         tableView.reloadData()
         dismiss(animated: true, completion: nil)
     }
-    
 }
 
 extension SelectedStudentViewController: UITableViewDataSource {
