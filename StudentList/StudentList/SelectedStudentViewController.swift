@@ -10,7 +10,7 @@ import UIKit
 class SelectedStudentViewController: UIViewController {
     
     var arrayStudentList: [String] = []
-    
+
     @IBAction func didEdittapped(_ sender: Any) {
         if tableView.isEditing == false && arrayStudentList.count > 0 {
             tableView.isEditing = true
@@ -31,9 +31,14 @@ class SelectedStudentViewController: UIViewController {
             self?.didSelectStudent(student)
         }
         present(vc, animated: true, completion: nil)
+        
     }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        load()
+    }
+    
 }
-
 extension SelectedStudentViewController: ViewControllerDelegate {
     func didSelectStudent(_ student: String) {
         if arrayStudentList.contains(student) == false {
@@ -47,6 +52,7 @@ extension SelectedStudentViewController: ViewControllerDelegate {
             }
         }
         tableView.reloadData()
+        save()
         dismiss(animated: true, completion: nil)
     }
 }
@@ -83,6 +89,7 @@ extension SelectedStudentViewController: UITableViewDataSource {
             tableView.deleteRows(at: [indexPath], with: .fade)
             tableView.endUpdates()
             tableView.reloadData()
+            save()
         }
     }
     
@@ -93,6 +100,18 @@ extension SelectedStudentViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
         arrayStudentList.swapAt(sourceIndexPath.row, destinationIndexPath.row)
         tableView.reloadData()
+        save()
+    }
+    
+    func save () {
+        UserDefaults.standard.set(arrayStudentList, forKey: "notes")
+    }
+    
+    func load () {
+        if let loadedData: [String] = UserDefaults.standard.value(forKey: "notes") as? [String] {
+            arrayStudentList = loadedData
+            tableView.reloadData()
+        }
     }
 }
 
