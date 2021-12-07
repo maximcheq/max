@@ -98,8 +98,8 @@ extension SelectedStudentViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
-        arrayStudentList.swapAt(sourceIndexPath.row, destinationIndexPath.row)
-        tableView.reloadData()
+        let item = arrayStudentList.remove(at: sourceIndexPath.row)
+        arrayStudentList.insert(item, at: destinationIndexPath.row)
         save()
     }
     
