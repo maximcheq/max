@@ -14,6 +14,7 @@ class CoreDataSave {
     
     func saveUserDafaults (students: [String]?){
         clearCoreData()
+        saveContext()
         saveStudents(students: students)
     }
     
