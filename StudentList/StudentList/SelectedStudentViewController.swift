@@ -9,7 +9,10 @@ import UIKit
 
 class SelectedStudentViewController: UIViewController {
     
-    var arrayStudentList: [String] = []
+    let def = CoreDataSave()
+    var arrayStudentList: [String] = {
+        CoreDataSave().returnStudentArray()
+    }()
 
     @IBAction func didEdittapped(_ sender: Any) {
         if tableView.isEditing == false && arrayStudentList.count > 0 {
@@ -35,7 +38,8 @@ class SelectedStudentViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        load()
+        //load()
+       
     }
     
 }
@@ -52,7 +56,8 @@ extension SelectedStudentViewController: ViewControllerDelegate {
             }
         }
         tableView.reloadData()
-        save()
+        //save()
+        def.saveUserDafaults(students: arrayStudentList)
         dismiss(animated: true, completion: nil)
     }
 }
@@ -89,7 +94,8 @@ extension SelectedStudentViewController: UITableViewDataSource {
             tableView.deleteRows(at: [indexPath], with: .fade)
             tableView.endUpdates()
             tableView.reloadData()
-            save()
+            //save()
+            def.saveUserDafaults(students: arrayStudentList)
         }
     }
     
