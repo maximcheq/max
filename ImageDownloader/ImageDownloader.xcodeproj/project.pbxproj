@@ -42,7 +42,7 @@
 		61DAC9B02781F56200C8A8AC = {
 			isa = PBXGroup;
 			children = (
-				61DAC9BB2781F56200C8A8AC /* Image Downloader */,
+				61DAC9BB2781F56200C8A8AC /* ImageDownloader */,
 				61DAC9BA2781F56200C8A8AC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,7 +55,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		61DAC9BB2781F56200C8A8AC /* Image Downloader */ = {
+		61DAC9BB2781F56200C8A8AC /* ImageDownloader */ = {
 			isa = PBXGroup;
 			children = (
 				61DAC9BC2781F56200C8A8AC /* AppDelegate.swift */,
@@ -67,7 +67,7 @@
 				61DAC9C72781F56200C8A8AC /* LaunchScreen.storyboard */,
 				61DAC9CA2781F56200C8A8AC /* Info.plist */,
 			);
-			path = "Image Downloader";
+			path = ImageDownloader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
