@@ -10,32 +10,32 @@ import UIKit
 class PreviewViewController: UIViewController {
     
     struct CatObject: Codable {
-        let url: URL
+        let url: String
     }
-
+    
     let urlWithJASON = "https://api.thecatapi.com/v1/images/search"
-    let urlStr = "https://ichef.bbci.co.uk/news/800/cpsprodpb/475B/production/_98776281_gettyimages-521697453.jpg.webp"
     
     @IBOutlet weak var imageView: UIImageView!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         title = "Preview"
         imageView.backgroundColor = .systemCyan
         
-       // let url = URL(string: urlStr)!
         let urlJSON = URL(string: urlWithJASON)!
+        var request = URLRequest(url: urlJSON)
+        request.addValue("612e5207-92a5-4dd8-97a3-4c4cd0a61306", forHTTPHeaderField: "Cat-Api-Key")
         
         DispatchQueue.global(qos: .userInitiated).async {
-            URLSession.shared.dataTask(with: urlJSON, completionHandler: {data, response, error in
+            URLSession.shared.dataTask(with: request, completionHandler: {data, response, error in
                 guard let data = data, error == nil else {
                     print("Something went wrong")
                     return
                 }
-                var json: CatObject?
+                var json: [CatObject]?
                 do {
-                    try json = JSONDecoder().decode(CatObject.self, from: data)
+                    try json = JSONDecoder().decode([CatObject].self, from: data)
                 }
                 catch {
                     print("error \(error)")
@@ -44,16 +44,17 @@ class PreviewViewController: UIViewController {
                 guard let result = json else {
                     return
                 }
+                print(result)
+                let urlCatStr = result.first!.url
+                let urlCat = URL(string: urlCatStr)!
                 
-                let urlCat = result.url
                 
-                
-            if let data = try? Data(contentsOf: urlCat) {
-                DispatchQueue.main.async { [weak self] in
-                    self?.imageView.image = UIImage(data: data)
+                if let data = try? Data(contentsOf: urlCat) {
+                    DispatchQueue.main.async { [weak self] in
+                        self?.imageView.image = UIImage(data: data)
+                    }
                 }
-            }
             }).resume()
+        }
     }
 }
-                                       }

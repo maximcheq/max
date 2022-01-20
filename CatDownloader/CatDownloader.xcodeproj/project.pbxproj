@@ -7,37 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		612139192767CF980067F231 /* StudentData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 612139172767CF980067F231 /* StudentData.xcdatamodeld */; };
-		6121391F2768A6750067F231 /* CoreDataSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6121391E2768A6750067F231 /* CoreDataSave.swift */; };
-		613EE8E72751540000FEC8BF /* SelectedStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613EE8E62751540000FEC8BF /* SelectedStudentViewController.swift */; };
-		61C4A74A27553C3300552361 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C4A74927553C3300552361 /* ViewController.swift */; };
-		61C4A74E2755491700552361 /* StudentCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C4A74D2755491700552361 /* StudentCell1.swift */; };
-		D2459ED0274425A100546CC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2459ECF274425A100546CC8 /* AppDelegate.swift */; };
-		D2459ED2274425A100546CC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2459ED1274425A100546CC8 /* SceneDelegate.swift */; };
-		D2459ED7274425A100546CC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2459ED5274425A100546CC8 /* Main.storyboard */; };
-		D2459ED9274425A300546CC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2459ED8274425A300546CC8 /* Assets.xcassets */; };
-		D2459EDC274425A300546CC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2459EDA274425A300546CC8 /* LaunchScreen.storyboard */; };
-		D2459EE42744277C00546CC8 /* StudentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2459EE32744277C00546CC8 /* StudentCell.swift */; };
+		61479DF32799CCDA006FA7C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61479DF22799CCDA006FA7C2 /* AppDelegate.swift */; };
+		61479DF52799CCDA006FA7C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61479DF42799CCDA006FA7C2 /* SceneDelegate.swift */; };
+		61479DF72799CCDA006FA7C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61479DF62799CCDA006FA7C2 /* ViewController.swift */; };
+		61479DFA2799CCDA006FA7C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61479DF82799CCDA006FA7C2 /* Main.storyboard */; };
+		61479DFC2799CCDB006FA7C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61479DFB2799CCDB006FA7C2 /* Assets.xcassets */; };
+		61479DFF2799CCDB006FA7C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61479DFD2799CCDB006FA7C2 /* LaunchScreen.storyboard */; };
+		61479E072799CCFA006FA7C2 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61479E062799CCFA006FA7C2 /* PreviewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		612139182767CF980067F231 /* StudentData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StudentData.xcdatamodel; sourceTree = "<group>"; };
-		6121391E2768A6750067F231 /* CoreDataSave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataSave.swift; sourceTree = "<group>"; };
-		613EE8E62751540000FEC8BF /* SelectedStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedStudentViewController.swift; sourceTree = "<group>"; };
-		61C4A74927553C3300552361 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		61C4A74D2755491700552361 /* StudentCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentCell1.swift; sourceTree = "<group>"; };
-		D2459ECC274425A100546CC8 /* StudentList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentList.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2459ECF274425A100546CC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D2459ED1274425A100546CC8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D2459ED6274425A100546CC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D2459ED8274425A300546CC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D2459EDB274425A300546CC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D2459EDD274425A300546CC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D2459EE32744277C00546CC8 /* StudentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentCell.swift; sourceTree = "<group>"; };
+		61479DEF2799CCDA006FA7C2 /* CatDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		61479DF22799CCDA006FA7C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		61479DF42799CCDA006FA7C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		61479DF62799CCDA006FA7C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		61479DF92799CCDA006FA7C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		61479DFB2799CCDB006FA7C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		61479DFE2799CCDB006FA7C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		61479E002799CCDB006FA7C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61479E062799CCFA006FA7C2 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D2459EC9274425A100546CC8 /* Frameworks */ = {
+		61479DEC2799CCDA006FA7C2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,77 +39,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D2459EC3274425A000546CC8 = {
+		61479DE62799CCDA006FA7C2 = {
 			isa = PBXGroup;
 			children = (
-				D2459ECE274425A100546CC8 /* StudentList */,
-				D2459ECD274425A100546CC8 /* Products */,
+				61479DF12799CCDA006FA7C2 /* CatDownloader */,
+				61479DF02799CCDA006FA7C2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D2459ECD274425A100546CC8 /* Products */ = {
+		61479DF02799CCDA006FA7C2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D2459ECC274425A100546CC8 /* StudentList.app */,
+				61479DEF2799CCDA006FA7C2 /* CatDownloader.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D2459ECE274425A100546CC8 /* StudentList */ = {
+		61479DF12799CCDA006FA7C2 /* CatDownloader */ = {
 			isa = PBXGroup;
 			children = (
-				D2459ECF274425A100546CC8 /* AppDelegate.swift */,
-				6121391E2768A6750067F231 /* CoreDataSave.swift */,
-				D2459ED1274425A100546CC8 /* SceneDelegate.swift */,
-				D2459EE32744277C00546CC8 /* StudentCell.swift */,
-				61C4A74D2755491700552361 /* StudentCell1.swift */,
-				61C4A74927553C3300552361 /* ViewController.swift */,
-				613EE8E62751540000FEC8BF /* SelectedStudentViewController.swift */,
-				D2459ED5274425A100546CC8 /* Main.storyboard */,
-				D2459ED8274425A300546CC8 /* Assets.xcassets */,
-				D2459EDA274425A300546CC8 /* LaunchScreen.storyboard */,
-				D2459EDD274425A300546CC8 /* Info.plist */,
-				612139172767CF980067F231 /* StudentData.xcdatamodeld */,
+				61479DF22799CCDA006FA7C2 /* AppDelegate.swift */,
+				61479DF42799CCDA006FA7C2 /* SceneDelegate.swift */,
+				61479DF62799CCDA006FA7C2 /* ViewController.swift */,
+				61479E062799CCFA006FA7C2 /* PreviewViewController.swift */,
+				61479DF82799CCDA006FA7C2 /* Main.storyboard */,
+				61479DFB2799CCDB006FA7C2 /* Assets.xcassets */,
+				61479DFD2799CCDB006FA7C2 /* LaunchScreen.storyboard */,
+				61479E002799CCDB006FA7C2 /* Info.plist */,
 			);
-			path = StudentList;
+			path = CatDownloader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D2459ECB274425A100546CC8 /* StudentList */ = {
+		61479DEE2799CCDA006FA7C2 /* CatDownloader */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D2459EE0274425A300546CC8 /* Build configuration list for PBXNativeTarget "StudentList" */;
+			buildConfigurationList = 61479E032799CCDB006FA7C2 /* Build configuration list for PBXNativeTarget "CatDownloader" */;
 			buildPhases = (
-				D2459EC8274425A100546CC8 /* Sources */,
-				D2459EC9274425A100546CC8 /* Frameworks */,
-				D2459ECA274425A100546CC8 /* Resources */,
+				61479DEB2799CCDA006FA7C2 /* Sources */,
+				61479DEC2799CCDA006FA7C2 /* Frameworks */,
+				61479DED2799CCDA006FA7C2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = StudentList;
-			productName = StudentList;
-			productReference = D2459ECC274425A100546CC8 /* StudentList.app */;
+			name = CatDownloader;
+			productName = CatDownloader;
+			productReference = 61479DEF2799CCDA006FA7C2 /* CatDownloader.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D2459EC4274425A000546CC8 /* Project object */ = {
+		61479DE72799CCDA006FA7C2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1310;
-				LastUpgradeCheck = 1310;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					D2459ECB274425A100546CC8 = {
-						CreatedOnToolsVersion = 13.1;
+					61479DEE2799CCDA006FA7C2 = {
+						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = D2459EC7274425A000546CC8 /* Build configuration list for PBXProject "StudentList" */;
+			buildConfigurationList = 61479DEA2799CCDA006FA7C2 /* Build configuration list for PBXProject "CatDownloader" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -125,60 +113,56 @@
 				en,
 				Base,
 			);
-			mainGroup = D2459EC3274425A000546CC8;
-			productRefGroup = D2459ECD274425A100546CC8 /* Products */;
+			mainGroup = 61479DE62799CCDA006FA7C2;
+			productRefGroup = 61479DF02799CCDA006FA7C2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D2459ECB274425A100546CC8 /* StudentList */,
+				61479DEE2799CCDA006FA7C2 /* CatDownloader */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D2459ECA274425A100546CC8 /* Resources */ = {
+		61479DED2799CCDA006FA7C2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2459EDC274425A300546CC8 /* LaunchScreen.storyboard in Resources */,
-				D2459ED9274425A300546CC8 /* Assets.xcassets in Resources */,
-				D2459ED7274425A100546CC8 /* Main.storyboard in Resources */,
+				61479DFF2799CCDB006FA7C2 /* LaunchScreen.storyboard in Resources */,
+				61479DFC2799CCDB006FA7C2 /* Assets.xcassets in Resources */,
+				61479DFA2799CCDA006FA7C2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D2459EC8274425A100546CC8 /* Sources */ = {
+		61479DEB2799CCDA006FA7C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61C4A74A27553C3300552361 /* ViewController.swift in Sources */,
-				612139192767CF980067F231 /* StudentData.xcdatamodeld in Sources */,
-				61C4A74E2755491700552361 /* StudentCell1.swift in Sources */,
-				613EE8E72751540000FEC8BF /* SelectedStudentViewController.swift in Sources */,
-				D2459ED0274425A100546CC8 /* AppDelegate.swift in Sources */,
-				D2459ED2274425A100546CC8 /* SceneDelegate.swift in Sources */,
-				D2459EE42744277C00546CC8 /* StudentCell.swift in Sources */,
-				6121391F2768A6750067F231 /* CoreDataSave.swift in Sources */,
+				61479DF72799CCDA006FA7C2 /* ViewController.swift in Sources */,
+				61479DF32799CCDA006FA7C2 /* AppDelegate.swift in Sources */,
+				61479DF52799CCDA006FA7C2 /* SceneDelegate.swift in Sources */,
+				61479E072799CCFA006FA7C2 /* PreviewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D2459ED5274425A100546CC8 /* Main.storyboard */ = {
+		61479DF82799CCDA006FA7C2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D2459ED6274425A100546CC8 /* Base */,
+				61479DF92799CCDA006FA7C2 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		D2459EDA274425A300546CC8 /* LaunchScreen.storyboard */ = {
+		61479DFD2799CCDB006FA7C2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D2459EDB274425A300546CC8 /* Base */,
+				61479DFE2799CCDB006FA7C2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -186,7 +170,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D2459EDE274425A300546CC8 /* Debug */ = {
+		61479E012799CCDB006FA7C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -237,7 +221,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -247,7 +231,7 @@
 			};
 			name = Debug;
 		};
-		D2459EDF274425A300546CC8 /* Release */ = {
+		61479E022799CCDB006FA7C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -292,7 +276,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -302,7 +286,7 @@
 			};
 			name = Release;
 		};
-		D2459EE1274425A300546CC8 /* Debug */ = {
+		61479E042799CCDB006FA7C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -310,7 +294,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = StudentList/Info.plist;
+				INFOPLIST_FILE = CatDownloader/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -321,7 +305,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.productiveapps.StudentList;
+				PRODUCT_BUNDLE_IDENTIFIER = by.maximcheq.CatDownloader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -329,7 +313,7 @@
 			};
 			name = Debug;
 		};
-		D2459EE2274425A300546CC8 /* Release */ = {
+		61479E052799CCDB006FA7C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -337,7 +321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = StudentList/Info.plist;
+				INFOPLIST_FILE = CatDownloader/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -348,7 +332,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.productiveapps.StudentList;
+				PRODUCT_BUNDLE_IDENTIFIER = by.maximcheq.CatDownloader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -359,38 +343,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D2459EC7274425A000546CC8 /* Build configuration list for PBXProject "StudentList" */ = {
+		61479DEA2799CCDA006FA7C2 /* Build configuration list for PBXProject "CatDownloader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D2459EDE274425A300546CC8 /* Debug */,
-				D2459EDF274425A300546CC8 /* Release */,
+				61479E012799CCDB006FA7C2 /* Debug */,
+				61479E022799CCDB006FA7C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D2459EE0274425A300546CC8 /* Build configuration list for PBXNativeTarget "StudentList" */ = {
+		61479E032799CCDB006FA7C2 /* Build configuration list for PBXNativeTarget "CatDownloader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D2459EE1274425A300546CC8 /* Debug */,
-				D2459EE2274425A300546CC8 /* Release */,
+				61479E042799CCDB006FA7C2 /* Debug */,
+				61479E052799CCDB006FA7C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		612139172767CF980067F231 /* StudentData.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				612139182767CF980067F231 /* StudentData.xcdatamodel */,
-			);
-			currentVersion = 612139182767CF980067F231 /* StudentData.xcdatamodel */;
-			path = StudentData.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
-	rootObject = D2459EC4274425A000546CC8 /* Project object */;
+	rootObject = 61479DE72799CCDA006FA7C2 /* Project object */;
 }

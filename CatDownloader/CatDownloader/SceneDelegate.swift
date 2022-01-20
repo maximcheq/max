@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  StudentList
+//  Image Downloader
 //
-//  Created by Nickolai Nikishin on 16.11.21.
+//  Created by Максим  on 2.01.22.
 //
 
 import UIKit

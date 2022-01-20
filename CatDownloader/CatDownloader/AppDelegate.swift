@@ -1,12 +1,11 @@
 //
 //  AppDelegate.swift
-//  StudentList
+//  CatDownloader
 //
-//  Created by Nickolai Nikishin on 16.11.21.
+//  Created by Максим  on 20.01.22.
 //
 
 import UIKit
-
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
