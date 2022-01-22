@@ -44,11 +44,11 @@ class PreviewViewController: UIViewController {
                 guard let result = json else {
                     return
                 }
-                print(result)
+                
                 let urlCatStr = result.first!.url
                 let urlCat = URL(string: urlCatStr)!
                 
-                
+        
                 if let data = try? Data(contentsOf: urlCat) {
                     DispatchQueue.main.async { [weak self] in
                         self?.imageView.image = UIImage(data: data)
