@@ -81,5 +81,4 @@ class CodeAutoLayoutViewController: UIViewController {
             fourthLabel.widthAnchor.constraint(equalTo: firstLabel.heightAnchor, multiplier: 1.0/1.0).isActive = true
             
         }
-
 }

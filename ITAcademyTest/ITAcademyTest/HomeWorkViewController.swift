@@ -10,8 +10,8 @@ class HomeWorkViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
+    
     @IBAction func Button(_ sender: UIButton) {
         counter = sender.tag
     }
@@ -19,6 +19,6 @@ class HomeWorkViewController: UIViewController {
 
 func updateLabel() {
     Label.text = "\(counter)"
-}
+    }
 }
      

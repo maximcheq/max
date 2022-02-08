@@ -7,9 +7,6 @@
 
 import UIKit
 
-
-
-
 class ViewController: UIViewController {
     
     @IBOutlet weak var Label: UILabel!
@@ -19,17 +16,14 @@ class ViewController: UIViewController {
         }
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
-    
     
   @IBAction func buttomTapped(_ sender: UIButton) {
       counter += sender.tag
-
     }
+    
     func updatelabel() {
         Label.text = "Counter: \(counter)"
     }
